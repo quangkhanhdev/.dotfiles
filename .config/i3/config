@@ -184,6 +184,12 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# Start GNOME Keyring daemon for secure credential storage
+# Ensure it starts with the necessary components (secrets for VS Code, ssh for SSH agent)
+exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh
+exec --no-startup-id eval $(/usr/bin/gnome-keyring-daemon --start) # This ensures environment variables are set
+exec --no-startup-id bash -c "export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)" # Ensure SSH_AUTH_SOCK is set if using SSH agent from keyring
+
 exec --no-startup-id fcitx5
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id nitrogen --restore
