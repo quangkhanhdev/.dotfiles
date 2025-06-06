@@ -29,9 +29,9 @@ This repository is managed using `GNU Stow` to create symbolic links, ensuring a
 
 *(Here, you would typically add screenshots of your desktop environment. You can remove this section if you don't plan to add screenshots.)*
 
-* **i3wm Desktop:** [Link to your i3wm desktop screenshot]
-* **Alacritty:** [Link to your terminal + editor screenshot]
-* **Rofi Menu:** [Link to your Rofi menu screenshot]
+* **i3wm Desktop:** [in future update]
+* **Alacritty:** [in future update]
+* **Rofi Menu:** [in future update]
 
 ## Prerequisites
 

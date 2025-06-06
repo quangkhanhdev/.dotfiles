@@ -23,7 +23,8 @@ echo "Dotfiles setup complete!"
 
 # Install packages
 echo "Installing essential packages..."
-sudo pacman -S alacritty zsh git i3 rofi polybar gnome-keyring  --noconfirm
+sudo pacman -S noto-fonts-emoji noto-fonts ttf-meslo-nerd ttf-firacode-nerd --noconfirm
+sudo pacman -S alacritty zsh git i3 rofi polybar gnome-keyring flameshot copyq rofi-emoji --noconfirm
 
 # Optional: Post-setup configurations
 chsh -s $(which zsh)

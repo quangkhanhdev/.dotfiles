@@ -183,7 +183,9 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
-
+bindsym $mod+Print exec flameshot gui
+#Rofi emoji gui
+bindsym $mod+shift+s exec --no-startup-id rofi -modi emoji -show emoji -emoji-format '{emoji}' -theme ${HOME}/.config/rofi/rofi-emoji.rasi
 # Start GNOME Keyring daemon for secure credential storage
 # Ensure it starts with the necessary components (secrets for VS Code, ssh for SSH agent)
 exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh
