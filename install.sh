@@ -4,7 +4,7 @@
 DOTFILES_DIR="$HOME/.dotfiles"
 if [ ! -d "$DOTFILES_DIR" ]; then
     echo "Cloning dotfiles repository..."
-    git clone https://github.com/yourusername/dotfiles.git "$DOTFILES_DIR"
+    git clone https://github.com/quangkhanhdev/.dotfiles.git "$DOTFILES_DIR"
 fi
 
 cd "$DOTFILES_DIR"
