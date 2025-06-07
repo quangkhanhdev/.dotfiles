@@ -56,7 +56,7 @@ bindsym $mod+Shift+q kill
 
 # start Rofi (a program launcher)
 bindsym $mod+d exec --no-startup-id rofi -show drun
-bindsym $mod+tab exec --no-startup-id rofi -show window
+#bindsym $mod+tab exec --no-startup-id rofi -show window
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -182,6 +182,12 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
+assign [class="Alacritty"] $ws1 # Gán terminal (Alacritty) vào workspace 1
+assign [class="firefox"] $ws2    # Gán Firefox vào workspace 2
+assign [class="Code"] $ws3       # Gán VS Code vào workspace 3
+assign [class="discord"] $ws4    # Gán Discord vào workspace 4
+assign [class="Steam"] $ws5      # Gán Steam vào workspace 5
+
 bindsym $mod+r mode "resize"
 bindsym $mod+Print exec flameshot gui
 #Rofi emoji gui
@@ -192,7 +198,8 @@ exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=pkcs11,s
 exec --no-startup-id eval $(/usr/bin/gnome-keyring-daemon --start) # This ensures environment variables are set
 exec --no-startup-id bash -c "export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)" # Ensure SSH_AUTH_SOCK is set if using SSH agent from keyring
 
-exec --no-startup-id fcitx5
+exec_always --no-startup-id fcitx5
+exec_always --no-startup-id copyq
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id nitrogen --restore
 exec_always --no-startup-id picom -f
