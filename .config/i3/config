@@ -188,6 +188,7 @@ assign [class="Code"] $ws3       # Gán VS Code vào workspace 3
 assign [class="discord"] $ws4    # Gán Discord vào workspace 4
 assign [class="Steam"] $ws5      # Gán Steam vào workspace 5
 
+bindsym $mod+End exec ~/.config/polybar/powermenu.sh
 bindsym $mod+r mode "resize"
 bindsym $mod+Print exec flameshot gui
 #Rofi emoji gui
@@ -202,8 +203,12 @@ exec_always --no-startup-id fcitx5
 exec_always --no-startup-id copyq
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id nitrogen --restore
-exec_always --no-startup-id picom -f
+exec_always --no-startup-id picom
+exec_always --no-startup-id dunst
+
+set $green #00a63e
 
 for_window [class="^.*"] border pixel 2
+client.focused $green $green $green $green $green
 
 gaps inner 5
