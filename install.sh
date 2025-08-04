@@ -36,7 +36,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 sudo pacman -S noto-fonts-emoji noto-fonts noto-fonts-cjk ttf-meslo-nerd ttf-firacode-nerd ttf-font-awesome --noconfirm
 # Refresh font cache
 fc-cache -fv
-sudo pacman -S alacritty fcitx5-bamboo fcitx5-configtool zsh git i3 rofi polybar gnome-keyring flameshot copyq rofi-emoji pavucontrol dunst picom nitrogen --noconfirm
+sudo pacman -S alacritty fcitx5 fcitx5-gtk fcitx5-bamboo fcitx5-configtool zsh git i3 rofi polybar gnome-keyring flameshot copyq rofi-emoji pavucontrol dunst picom nitrogen --noconfirm
 sudo pacman -S pipewire pipewire-audio pipewire-pulse pipewire-alsa wireplumber lightdm lightdm-gtk-greeter xorg-xrandr --noconfirm
 
 # set background
