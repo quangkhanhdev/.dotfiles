@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=GNOME Keyring
+Comment=Starts the GNOME Keyring daemon
+Exec=/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh
+Terminal=false
+Type=Application
+X-GNOME-Autostart-enabled=true
