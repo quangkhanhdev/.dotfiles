@@ -1,0 +1,9 @@
+* {
+    background:     #282828;
+    background-alt: #332828ff;
+    foreground:     #ebdbb2;
+    selected:       #D97742FF;
+    active:         #BF8F60FF;
+    urgent:         #bb6161ff;
+	font: "JetBrainsMono NF 12";
+}
