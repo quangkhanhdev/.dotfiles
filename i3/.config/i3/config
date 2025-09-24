@@ -185,15 +185,18 @@ mode "resize" {
 
 focus_follows_mouse no #current windows not lose focused on mouse moving
 bindsym $mod+r mode "resize"
-# A more modern dmenu replacement is rofi:
+# Launch Rofi
 bindsym $mod+d exec --no-startup-id ~/.config/rofi/launcher.sh
 bindsym $mod+End exec --no-startup-id ~/.config/rofi/powermenu.sh
-
+bindsym $mod+Shift+s exec --no-startup-id ~/.config/rofi/emoji.sh
+# Launch Flameshot
+bindsym $mod+Print exec --no-startup-id flameshot gui
 # Launch Polybar
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh &
-exec_always --no-startup-id fcitx5 &
-exec_always --no-startup-id nitrogen --restore &
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id fcitx5
+exec_always --no-startup-id nitrogen --restore
 exec_always --no-startup-id picom
+exec_always --no-startup-id copyq
 
 # Gnome-keyring
 exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh
