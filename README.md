@@ -37,7 +37,6 @@ This repository is managed using `GNU Stow` to create symbolic links, ensuring a
 
 ## Screenshots
 
-*(Here, you would typically add screenshots of your desktop environment. You can remove this section if you don't plan to add screenshots.)*
 
 * **Alacritty:**
 ![Alacritty](./Themes/screenshot/terminal.png)
