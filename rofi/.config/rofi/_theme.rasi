@@ -5,5 +5,5 @@
     selected:       #D97742FF;
     active:         #BF8F60FF;
     urgent:         #bb6161ff;
-	font: "JetBrainsMono NF 12";
+	font: "JetBrainsMono Nerd Font 12";
 }
